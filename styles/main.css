@@ -664,3 +664,89 @@ footer {
   z-index: -1;
   opacity: 0.5;
 }
+
+/* Contact Section Styles */
+#contact {
+  /* background: #f4f7fa; */
+  padding: 60px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-header h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #eef2f5;
+}
+
+.section-header .highlight {
+  color: #415a77;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  background: #1a1d21;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #eef2f5;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #eef2f5;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-details div {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #eef2f5;
+}
+
+.contact-text {
+  color: #eef2f5;
+  font-weight: 500;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  text-decoration: none;
+  background-color: #415a77;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #1b263b;
+}
