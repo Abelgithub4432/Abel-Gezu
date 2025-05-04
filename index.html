@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AbelCyber Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="particle-container"></div>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <span class="logo-text">AbelCyber<span class="blink">_</span></span>
+          </div>
+          <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="terminal-container">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <span class="terminal-close"></span>
+                  <span class="terminal-minimize"></span>
+                  <span class="terminal-maximize"></span>
+                </div>
+                <div class="terminal-title">AbelCyber@secure ~</div>
+              </div>
+              <div class="terminal-body" id="terminal">
+                <div class="line">
+                  <span class="prompt">AbelCyber@secure:~$</span>
+                  <span class="command" id="typingText"></span>
+                </div>
+                <div id="terminalOutput"></div>
+              </div>
+            </div>
+            <div class="hero-text">
+              <h1>Hey am Abel Gezu <span class="highlight"></span></h1>
+              <p>
+                A junior cybersecurity enthusiast with internship experience,
+                eager to contribute and learn in the field of security and
+                technology.
+              </p>
+              <div class="cta-buttons">
+                <a href="#contact" class="btn secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I'm Abel Gezu, a junior cybersecurity enthusiast who has gained
+                hands-on experience through internship opportunities. I have
+                worked with tools and techniques used in both offensive and
+                defensive security, and I'm passionate about making digital
+                environments safer.
+              </p>
+              <p>
+                My interests lie in learning and applying real-world skills like
+                penetration testing, vulnerability analysis, and threat
+                detection. I'm open to learning, collaborating, and growing
+                professionally within dynamic teams.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <span class="stat-number" id="vulnerabilitiesFound">3</span>
+                  <span class="stat-label">Vulnerabilities Found</span>
+                </div>
+              </div>
+            </div>
+            <div class="threat-map">
+              <div class="map-header">
+                <h3>Live Threat Detection</h3>
+                <div class="threat-stats">
+                  <div class="threat-stat">
+                    <span class="threat-label">Attacks Blocked:</span>
+                    <span class="threat-value" id="attacksBlocked">0</span>
+                  </div>
+                  <div class="threat-stat">
+                    <span class="threat-label">Threat Level:</span>
+                    <span class="threat-value" id="threatLevel">Low</span>
+                  </div>
+                </div>
+              </div>
+              <div class="map-container" id="threatMap"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+          </div>
+          <div class="skills-content">
+            <div class="skill-category">
+              <h3>Offensive Security</h3>
+              <div class="skill-items" id="offensiveSkills">
+                <!-- Skills will be populated by JavaScript -->
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Security Tools</h3>
+              <div class="skill-items" id="securityTools">
+                <!-- Skills will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Experience" class="Experience">
+        <div class="container">
+          <div class="section-header">
+            <h2>
+              Education & Professional Experiance
+              <span class="highlight"></span>
+            </h2>
+          </div>
+          <div class="Experience-slider" id="ExperienceSlider">
+            <!-- Experience will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact <span class="highlight">Me</span></h2>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+              <p>Feel free to reach out for collaborations</p>
+              <div class="contact-details">
+                <div class="">
+                  <span class="contact-icon">📧</span>
+                  <span class="contact-text">abelgezu196@gmail.com</span>
+                </div>
+                <div class="">
+                  <span class="contact-icon">📞</span>
+                  <span class="contact-text">0944324229</span>
+                </div>
+
+                <div class="social-links">
+                  <a
+                    href="https://github.com/Abelgithub4432"
+                    class="social-link"
+                    >GitHub</a
+                  >
+                  <a
+                    href="www.linkedin.com/in/abel-gezu-7339a02b6"
+                    class="social-link"
+                    >LinkedIn</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/terminal.js"></script>
+    <script type="module" src="./js/skills.js"></script>
+    <script type="module" src="./js/Experience.js"></script>
+  </body>
+</html>

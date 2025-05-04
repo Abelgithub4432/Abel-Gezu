@@ -1,0 +1,263 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Base is mobile first */
+
+/* Extra small devices (phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  :root {
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .terminal-container {
+    height: 250px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr;
+  }
+
+  .threat-map {
+    margin-top: var(--spacing-md);
+  }
+
+  .map-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .threat-stats {
+    margin-top: var(--spacing-xs);
+  }
+
+  .project-modal .modal-content {
+    width: 95%;
+    padding: var(--spacing-sm);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .terminal-container {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .threat-map {
+    margin-top: var(--spacing-md);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero-content,
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Navigation responsiveness */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md) 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-normal);
+    z-index: 999;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-sm) 0;
+  }
+
+  /* Adjustments for hero section on small screens */
+  .hero {
+    padding-top: calc(var(--header-height) + var(--spacing-md));
+  }
+
+  /* Project grid on small screens */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer adjustments */
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
+
+/* Adjustments for certifications slider on small screens */
+@media (max-width: 576px) {
+  .certification-card {
+    min-width: 250px;
+  }
+}
+
+/* Terminal container responsiveness */
+@media (max-width: 768px) {
+  .terminal-body {
+    font-size: 0.8rem;
+  }
+}
+
+/* Improved tablet experience */
+@media (min-width: 768px) and (max-width: 991px) {
+  .project-card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .certification-card {
+    min-width: 280px;
+  }
+}
+
+/* Print styles for resume */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  header,
+  footer,
+  .contact-form-container,
+  .cta-buttons,
+  .nav-menu,
+  .particle-container,
+  .filter-tabs {
+    display: none !important;
+  }
+
+  main,
+  .container,
+  section {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Ensure white background for all elements when printing */
+  * {
+    background-color: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  /* Preserve hyperlinks in printing */
+  a:link,
+  a:visited {
+    color: #0000EE !important;
+    text-decoration: underline;
+  }
+
+  /* Add URL after links */
+  a:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+  }
+}
