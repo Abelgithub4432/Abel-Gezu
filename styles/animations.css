@@ -2,8 +2,13 @@
 
 /* Blinking Cursor */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .blink {
@@ -12,8 +17,12 @@
 
 /* Typing Animation */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .typing {
@@ -24,8 +33,14 @@
 
 /* Fade In Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in {
@@ -34,9 +49,15 @@
 
 /* Pulse Animation */
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .pulse {
@@ -45,9 +66,15 @@
 
 /* Glow Animation */
 @keyframes glow {
-  0% { box-shadow: 0 0 5px rgba(0, 255, 179, 0.5); }
-  50% { box-shadow: 0 0 20px rgba(0, 255, 179, 0.8); }
-  100% { box-shadow: 0 0 5px rgba(0, 255, 179, 0.5); }
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 179, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 179, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 179, 0.5);
+  }
 }
 
 .glow {
@@ -56,8 +83,12 @@
 
 /* Scan Line Animation */
 @keyframes scanline {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(100%); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
 
 .scanline {
@@ -66,7 +97,12 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, transparent, var(--accent-primary), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-primary),
+    transparent
+  );
   opacity: 0.5;
   animation: scanline 3s linear infinite;
   z-index: 1;
@@ -74,9 +110,15 @@
 
 /* Floating Animation */
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .float {
@@ -85,8 +127,14 @@
 
 /* Ripple Animation */
 @keyframes ripple {
-  0% { transform: scale(0.8); opacity: 1; }
-  100% { transform: scale(2); opacity: 0; }
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 .ripple-effect {
@@ -98,8 +146,12 @@
 
 /* Loading Spinner Animation */
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-spinner {
@@ -113,8 +165,14 @@
 
 /* Fade In Different Directions */
 @keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .fade-in-left {
@@ -122,8 +180,14 @@
 }
 
 @keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(30px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .fade-in-right {
@@ -131,8 +195,14 @@
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in-up {
@@ -140,8 +210,14 @@
 }
 
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in-down {
@@ -150,8 +226,12 @@
 
 /* Number Count Animation */
 @keyframes count {
-  from { content: "0"; }
-  to { content: attr(data-count); }
+  from {
+    content: "0";
+  }
+  to {
+    content: attr(data-count);
+  }
 }
 
 .count-up {
@@ -165,13 +245,24 @@
 
 /* Gradient Text Animation */
 @keyframes gradient-text {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-primary));
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    var(--accent-secondary),
+    var(--accent-primary)
+  );
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -181,9 +272,15 @@
 
 /* Focus Border Animation */
 @keyframes focusBorder {
-  0% { border-color: transparent; }
-  50% { border-color: var(--accent-primary); }
-  100% { border-color: transparent; }
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-primary);
+  }
+  100% {
+    border-color: transparent;
+  }
 }
 
 .focus-border {
@@ -194,8 +291,24 @@
 
 /* Flicker Animation */
 @keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% { opacity: 1; }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% { opacity: 0.3; }
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.3;
+  }
 }
 
 .flicker {
@@ -204,8 +317,12 @@
 
 /* Matrix Rain Effect */
 @keyframes matrixRain {
-  0% { top: -10%; }
-  100% { top: 100%; }
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
 }
 
 .matrix-character {
@@ -218,8 +335,14 @@
 
 /* Scale In Animation */
 @keyframes scaleIn {
-  from { transform: scale(0); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .scale-in {
@@ -228,8 +351,12 @@
 
 /* Skill Level Bar Animation */
 @keyframes fillBar {
-  from { width: 0; }
-  to { width: var(--fill-percent); }
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--fill-percent);
+  }
 }
 
 .skill-level-bar {
@@ -238,24 +365,51 @@
 
 /* Security Scan Animation */
 @keyframes securityScan {
-  0% { top: 0; opacity: 0.8; }
-  50% { opacity: 0.2; }
-  100% { top: 100%; opacity: 0.8; }
+  0% {
+    top: 0;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.8;
+  }
 }
 
 .security-scan {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, transparent, var(--accent-secondary), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-secondary),
+    transparent
+  );
   animation: securityScan 3s ease-in-out infinite;
 }
 
 /* Shake Animation for Warnings */
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-  20%, 40%, 60%, 80% { transform: translateX(5px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
 }
 
 .shake {
@@ -264,8 +418,12 @@
 
 /* Rotate 360 Animation */
 @keyframes rotate360 {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .rotate-360 {
@@ -274,12 +432,24 @@
 
 /* Glitch Text Effect */
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-3px, 3px); }
-  40% { transform: translate(-3px, -3px); }
-  60% { transform: translate(3px, 3px); }
-  80% { transform: translate(3px, -3px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-3px, 3px);
+  }
+  40% {
+    transform: translate(-3px, -3px);
+  }
+  60% {
+    transform: translate(3px, 3px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .glitch {
@@ -292,9 +462,27 @@
 
 /* Gradient Border Animation */
 @keyframes gradientBorder {
-  0% { border-image-source: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)); }
-  50% { border-image-source: linear-gradient(45deg, var(--accent-secondary), var(--accent-primary)); }
-  100% { border-image-source: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)); }
+  0% {
+    border-image-source: linear-gradient(
+      45deg,
+      var(--accent-primary),
+      var(--accent-secondary)
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      45deg,
+      var(--accent-secondary),
+      var(--accent-primary)
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      45deg,
+      var(--accent-primary),
+      var(--accent-secondary)
+    );
+  }
 }
 
 .gradient-border {

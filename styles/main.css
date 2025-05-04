@@ -488,34 +488,6 @@ section {
   display: inline-block;
 }
 
-/* ===== CONTACT SECTION ===== */
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-lg);
-  align-items: start;
-}
-
-.contact-info h3 {
-  margin-bottom: var(--spacing-md);
-}
-
-.contact-info p {
-  color: var(--text-secondary);
-  margin-bottom: var(--spacing-md);
-}
-
-.contact-details {
-  margin-top: var(--spacing-lg);
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--spacing-sm);
-  font-family: var(--font-mono);
-}
-
 .contact-icon {
   margin-right: var(--spacing-sm);
   font-size: 1.2rem;
@@ -534,30 +506,6 @@ section {
 
 .social-link:hover {
   color: var(--text-primary);
-}
-
-.contact-form-container {
-  background-color: var(--bg-card);
-  border-radius: 8px;
-  padding: var(--spacing-md);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.form-encryption-status {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: var(--spacing-sm);
-}
-
-.encryption-indicator {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  color: var(--accent-primary);
-}
-
-.encryption-icon {
-  margin-right: var(--spacing-xs);
 }
 
 .form-group {
